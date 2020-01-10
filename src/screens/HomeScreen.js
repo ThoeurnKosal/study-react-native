@@ -4,11 +4,12 @@ import { Text, StyleSheet , View , Button , TouchableOpacity } from 'react-nativ
 const HomeScreen = ({navigation}) => {
   return(
   <View>
-    <Text style={styles.text}>Hi Kosal!</Text>
+
       <Button
         onPress={() => navigation.navigate('Components')}
         title="Go to Component Demo" 
       />
+
       <Button
         onPress={() => navigation.navigate('List')}
         title="Go to List View Demo"
@@ -22,6 +23,11 @@ const HomeScreen = ({navigation}) => {
       <Button
         onPress={() => navigation.navigate('Counter')}
         title="Go to Counter Demo"
+      />
+
+      <Button
+        onPress={() => navigation.navigate('Color')}
+        title="Go to Color Demo"
       />
 
   </View> 
